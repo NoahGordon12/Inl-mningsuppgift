@@ -1,4 +1,4 @@
-.card-img {
+.header-img {
     width: 100%;
 }
 
@@ -7,36 +7,32 @@ header {
     
 }
 
-.h2 {
+body {
+    background-color: white;
+    
+}
+
+/*Responsive för en 1920x1080 resolution*/
+.voodoo {
     top: 3%;
     left: 46%;
     position: absolute;
-
-
+    font-size: 50px;
 }
 
-.h1 {
-    text-align: center;
-    
-    
+
+
+
+.intro-h1 {
+    padding-left: 50%   ;
+    font-size: 65px;
 }
 
-.p {
+.intro-p {
     text-align: right;
-    display: flex;
-    justify-content: center;
-    
-}
+    font-size: 48px;
+    padding-right: 21%;
 
-.container {
-    margin:auto;
-    background-color:white;
-}
-
-body {
-    background-color: grey;
-    width: 42%;
-    margin: auto;
 }
 
 
@@ -46,22 +42,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 10rem; 
 }
 
 .text {
     text-align: left;
-    font-size: 18px;
-    padding-left: 10px;
-    padding-top: 100px;
+    font-size: 45px;
+    padding-left: 100px; 
     
 }
 
 .img-1 {
-    width: 60%;
+    width: 25%;
+    padding-top: 50px;
+    padding-left: 12rem;
 }
 
 
-
+video {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+}
 
 
 
@@ -69,30 +71,28 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: center;
 }
 
 .text-2 {
-    font-size: 18px;
+    font-size: 45px;
     text-align: right;
+    padding-right: 50px;
 }
 
 .img-2 {
-    width: 60%;
-}
+    width: 47%;
 
+}
 
 
 
 .text-3 {
-    font-size: 18px;
+    font-size: 45px;
     display: flex;
     justify-content: center;
     
 }
-
-
-
-
 
 
 .section-3 {
@@ -103,40 +103,181 @@ body {
 }
 
 .text-4 {
-    font-size: 18px;
+    font-size: 45px;
     position: absolute; 
     text-align: center;
-    top: 20px;
+    top: 30%;
     left: 0;
     right: 0;
 }
 
 .img-3 {
     width: 100%;
-    height: 200px;
 }
-
-
-
 
 
 
 .footer {
     background-color: rgb(29, 27, 27);
     color: white;
-    display: flex;
-    
+    display: flex;     
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 38rem;
     }
 
-.p-2 {
-    text-align: left;
-    width: 50px;
+.footer-p2 {
+    font-size: 45px;
+    
 }
     
-
-
-
-.p-3 {
+.footer-p3 {
     text-align: right;
-    
+    font-style: italic;
+    font-size: 45px;
+    padding-top: 8rem;
+
 }
+
+
+
+
+/*Responsive för iPad*/
+@media screen and (max-width: 769px) {
+
+    .voodoo {
+        font-size: 22px;
+    }
+    
+    .intro-h1 {
+        font-size: 40px;
+        padding-left: 50%;
+    }
+
+    .intro-p {
+        font-size: 18px;
+        padding-right: 24%;
+    }
+
+
+    .text {
+        font-size: 18px;
+        padding-left: 70px;
+
+    }
+    
+    .section-1 {
+        padding: 0 20px;
+        justify-content: space-around;
+    }
+
+    .img-1 {
+        width: 29%;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+
+    video {
+        height: 24rem;
+    }
+
+
+    .text-2 {
+        font-size: 18px;
+        padding-bottom: 5rem;
+    }
+
+    .img-2 {
+        width: 54%;
+    }
+
+    .text-3 {
+        font-size: 18px;
+    }
+
+    .img-3 {
+        width: 100%;
+    }
+
+    .text-4 {
+        font-size: 18px;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer-p2 {
+        font-size: 18px;
+    }
+
+    .footer-p3 {
+        font-size: 18px;
+        padding-top: 50px;
+    }
+}
+
+
+
+/*Responsive för iPhone 8+*/
+@media screen and (max-width: 415px) {
+
+    .voodoo {
+        top: 0%; 
+        font-size: 14px;
+    }
+
+    .intro-h1 {
+        font-size: 20px;
+
+    }
+
+    .intro-p {
+        font-size: 10px;
+    }
+
+    .section-1 {
+        padding: 0 20px;
+    }
+
+    .text {
+        font-size: 10px;
+        padding-left: 9px;
+    }
+
+    .img-1 {
+        width: 33%;
+    }
+
+    video {
+        height: 12rem;
+    }
+
+    .text-2 {
+        font-size: 10px;
+        padding-top: 2rem;
+        padding-right: 22px;
+    }
+
+    .img-2 {
+        width: 53%;
+    }
+
+    .text-3 {
+        font-size: 10px;
+    }
+
+    .text-4 {
+        font-size: 10px;
+    }
+
+    .footer-p2 {
+        font-size: 10px;
+    }
+
+    .footer-p3 {
+        font-size: 10px;
+        padding-top: 28px;
+    }
+}
+    
